@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -9,6 +9,10 @@ import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCar
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { Coffee, Heart, Milk, Snowflake, Sparkles, Star } from 'lucide-react';
+
+const assetMap = [
+  // No assets defined in IMAGE MANIFEST, using remote URLs as fallbacks
+];
 
 export default function Home() {
   return (
@@ -59,7 +63,7 @@ export default function Home() {
       {/* About Section */}
       <div id="about" data-section="about">
         <TextAbout
-          title="We believe that chocolate is more than just a treat – it's an experience that brings joy to every moment. Our master chocolatiers craft each piece with passion and precision, using time-honored techniques and the finest ingredients from around the world."
+          title="We believe that chocolate is more than just a treat – it's an experience that brings joy to every moment. Our master chocolatiers craft each piece with passion and precision, using time-honored techniques and the finest ingredients from around the world. With 20+ years of chocolate craftsmanship, we have perfected the art of creating extraordinary chocolate experiences."
           buttons={[
             {
               text: "Learn More",
